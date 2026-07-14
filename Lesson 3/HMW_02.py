@@ -1,4 +1,4 @@
-#Task 1
+# Task 1
 def print_list_reverse(lst):
     # Проверяем, что аргумент — это именно список (отсекает None и другие типы)
     # и что список не пустой (len(lst) == 0 отсекается через not lst)
@@ -16,10 +16,10 @@ print_list_reverse([])
 print_list_reverse(None)
 print_list_reverse("123")
 
+print("********************************************************************************")
 
 
-print ("********************************************************************************")
-#Task 2
+# Task 2
 def is_valid_point(point):
     # 1. Проверка на None и пустой кортеж
     if point is None or point == ():
@@ -49,10 +49,10 @@ print(is_valid_point((1, 2, 3)))
 print(is_valid_point(()))
 print(is_valid_point(None))
 
+print("********************************************************************************")
 
 
-print ("********************************************************************************")
-#Task 3
+# Task 3
 def print_sublist_reverse(lst, start, finish):
     # Проверяем сам список
     if type(lst) is not list or not lst:
@@ -78,15 +78,16 @@ def print_sublist_reverse(lst, start, finish):
 
     print(result)
 
+
 # Проверки:
 print_sublist_reverse([10, 20, 30, 40, 50, 60], 1, 3)
 print_sublist_reverse([1, 2, 3], "0", 2)
 print_sublist_reverse([1, 2], 0, 5)
 
+print("********************************************************************************")
 
 
-print ("********************************************************************************")
-#Task 4
+# Task 4
 def get_students_by_grade(students):
     # Проверяем на None, пустой словарь и соответствие типу dict
     if type(students) is not dict or not students:
@@ -109,7 +110,6 @@ def get_students_by_grade(students):
 # Проверки:
 data = {"Alice": 90, "Bob": 85, "Diana": 90, "Charlie": 85}
 print(get_students_by_grade(data))
-
 
 print(get_students_by_grade({}))
 print(get_students_by_grade(None))
