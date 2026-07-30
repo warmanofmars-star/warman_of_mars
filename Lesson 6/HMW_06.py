@@ -92,6 +92,7 @@ print(f"User: {user2.username}, Age: {user2.age}, Country: {user2.country}")
 print(f"User: {user3.username}, Age: {user3.age}, Country: {user3.country}")
 
 # Меняем атрибут на уровне всего класса
+
 User.country = "Canada"
 
 print("\n--- После изменения ---")
